@@ -67,7 +67,7 @@ const ProfileOverlay = ({ name, title, bio, onClose }) => {
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.25, duration: 0.4 }}
-                style={{ margin: 0, fontWeight: 'normal' }}
+                style={{ margin: 0, fontWeight: 'normal', marginTop: 14, }}
             >
                 {title}
             </motion.h3>
