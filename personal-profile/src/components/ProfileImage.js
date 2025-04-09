@@ -58,7 +58,6 @@ const ProfileImage = ({ imageUrl, altText, onClick }) => {
             style: { top: '30%', left: '-50px' },
             anim: { x: [0, 15, 0], y: [0, -15, 0], duration: 8 },
         },
-        
     ];
 
     return (
@@ -125,6 +124,8 @@ const ProfileImage = ({ imageUrl, altText, onClick }) => {
                 />
             ))}
 
+           
+
             {/* Profile Image */}
             <motion.img
                 src={imageUrl}
@@ -144,8 +145,9 @@ const ProfileImage = ({ imageUrl, altText, onClick }) => {
                 animate={{
                     scale: isHovered ? 1.1 : 1,
                     filter: isHovered ? 'grayscale(0%)' : 'grayscale(100%)',
+                    borderColor: isHovered ? 'rgba(255, 255, 255, 0.7)' : 'rgba(255, 255, 255, 0.3)',
                 }}
-                transition={{ duration: 0.3 }}
+                transition={{ duration: 0.1 }}
             />
         </div>
     );
