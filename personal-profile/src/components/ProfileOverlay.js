@@ -83,30 +83,31 @@ const ProfileOverlay = ({ name, title, bio, onClose }) => {
                     onClick={onClose}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
-                    transition={{ delay: 0.35, duration: 0.3 }}
+                    transition={{ delay: 0.25, duration: 0.05 }}
                     style={{
-                        backgroundColor: '#dc3545',
+                        backgroundColor: 'rgb(73, 73, 73)',
                         color: '#fff',
                         padding: '0.5rem 1.25rem',
                         fontSize: '1rem',
                         fontWeight: 500,
-                        border: '1px solid #dc3545',
+                        border: '1px solid rgb(73, 73, 73)',
                         borderRadius: '0.375rem',
                         cursor: 'pointer',
                         lineHeight: '1.5',
-                        display: 'flex', // Ensure flex for consistent height
+                        display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
-                        height: '42px', // Set height consistently
+                        height: '42px',
                         width: 'auto',
                         boxSizing: 'border-box',
-                        transition: 'background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out',
+                        transition: 'all 0.1s ease-out',
                     }}
                     whileHover={{
-                        backgroundColor: '#bb2d3b',
+                        backgroundColor: 'rgb(54, 54, 54)',
+                        scale: 1.05,
                     }}
                     whileTap={{
-                        scale: 0.98,
+                        scale: 0.4,
                     }}
                 >
                     Close
@@ -119,31 +120,32 @@ const ProfileOverlay = ({ name, title, bio, onClose }) => {
                     rel="noopener noreferrer"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
-                    transition={{ delay: 0.4, duration: 0.3 }}
+                    transition={{ delay: 0.25, duration: 0.05 }}
                     style={{
-                        backgroundColor: '#198754',
+                        backgroundColor: 'rgb(17, 83, 224)',
                         color: '#fff',
                         padding: '0.5rem 1.25rem',
                         fontSize: '1rem',
                         fontWeight: 500,
-                        border: '1px solid #198754',
+                        border: '1px solid rgb(17, 83, 224)',
                         borderRadius: '0.375rem',
                         cursor: 'pointer',
                         lineHeight: '1.5',
-                        display: 'flex', // Ensure flex for consistent height
+                        display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
-                        height: '42px', // Set height consistently
+                        height: '42px',
                         width: 'auto',
                         boxSizing: 'border-box',
                         textDecoration: 'none',
-                        transition: 'background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out',
+                        transition: 'all 0.1s ease-out',
                     }}
                     whileHover={{
-                        backgroundColor: '#157347',
+                        backgroundColor: 'rgb(15, 70, 189)',
+                        scale: 1.05,
                     }}
                     whileTap={{
-                        scale: 0.98,
+                        scale: 0.4,
                     }}
                 >
                     View Portfolio

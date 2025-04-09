@@ -115,12 +115,11 @@ p {
 
 .profile-image-container {
   background-color: green;
+  padding: 0;
   position: relative;
   width: 200px;
-  height: auto;
-  max-width: 200px;
+  height: 200px;
   margin: auto;
-  margin-top: 200px;
   border-radius: 50%;
   overflow: hidden;
   border: 1px solid #ccc;
@@ -128,21 +127,6 @@ p {
 
 .profile-overlay h2, .profile-overlay h3, .profile-overlay p {
   text-align: center;
-}
-
-@keyframes particleEffect {
-  0% {
-      transform: scale(0.8);
-      opacity: 0.6;
-  }
-  50% {
-      transform: scale(1);
-      opacity: 1;
-  }
-  100% {
-      transform: scale(1.2);
-      opacity: 0;
-  }
 }
 
 

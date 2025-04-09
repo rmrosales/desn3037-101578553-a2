@@ -33,7 +33,7 @@ const ProfileImage = ({ imageUrl, altText, onClick }) => {
                     height: '200px',
                     objectFit: 'cover',      // ensures full coverage
                     objectPosition: 'center',
-                    borderRadius: '100px',
+                    borderRadius: '10px',
                     boxShadow: isHovered ? '0 0 10px rgba(0, 0, 0, 0.5)' : 'none',
                 }}
             />

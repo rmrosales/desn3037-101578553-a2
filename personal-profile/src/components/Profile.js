@@ -19,7 +19,8 @@ const Profile = () => {
         <ProfileOverlay
           name="Romeo Martin J. Rosales"
           title="UI/UX Designer"
-          bio="Passionate designer with a focus on user experience, working with diverse teams to create intuitive digital solutions."
+          bio="I'm Romeo, a product designer and developer from Toronto who loves bringing ideas to life
+through clean design and smooth interactions - fueled by creativity and probably too much coffee! With a focus on user-centered solutions, I combine creativity and technical expertise to craft seamless experiences that resonate with users and meet business goals."
           onClose={toggleOverlay}
         />
       )}
