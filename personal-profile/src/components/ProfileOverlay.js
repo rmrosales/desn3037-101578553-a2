@@ -1,13 +1,28 @@
 // src/components/ProfileOverlay.js
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 const ProfileOverlay = ({ name, title, bio, onClose }) => {
+    const [animationState, setAnimationState] = useState({
+        imgScale: 0,
+        opacity: 0,
+        yOffset: 30,
+    });
+
+    // Example of using useEffect to update animation state when component mounts
+    useEffect(() => {
+        setAnimationState({
+            imgScale: 1,
+            opacity: 1,
+            yOffset: 0,
+        });
+    }, []); // Empty dependency array makes this run on mount
+
     return (
         <motion.div
             className="profile-overlay"
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            animate={{ opacity: animationState.opacity }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }} // 🟢 faster overlay fade-in/out
             style={{
@@ -32,12 +47,12 @@ const ProfileOverlay = ({ name, title, bio, onClose }) => {
                     marginBottom: '20px',
                 }}
                 initial={{ scale: 0 }}
-                animate={{ scale: 1 }}
+                animate={{ scale: animationState.imgScale }}
                 transition={{ duration: 0.4, ease: [0.33, 1, 0.68, 1] }} // 🟢 snappy zoom
             />
 
             <motion.h2
-                initial={{ y: 30, opacity: 0 }}
+                initial={{ y: animationState.yOffset, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.2, duration: 0.4 }}
             >
@@ -99,7 +114,7 @@ const ProfileOverlay = ({ name, title, bio, onClose }) => {
 
                 {/* Portfolio Button */}
                 <motion.a
-                    href="https://your-portfolio-link.com"
+                    href="https://rmrosales.github.io/portfolio/"
                     target="_blank"
                     rel="noopener noreferrer"
                     initial={{ opacity: 0 }}
