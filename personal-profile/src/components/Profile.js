@@ -11,7 +11,7 @@ const Profile = () => {
   return (
     <div className="profile">
       <ProfileImage
-        imageUrl="profile-ico.svg"
+        imageUrl="hero-mini-photo.webp"
         altText="Profile Headshot"
         onClick={toggleOverlay}
       />
